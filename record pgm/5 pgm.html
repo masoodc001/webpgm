@@ -1,0 +1,88 @@
+
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+
+<style>
+	h1{
+		color:blue;
+		text-align:center;
+		font-family:sans-serif;
+	}
+
+	label{
+		font-style: oblique;
+	}
+	#hdg{
+		margin-left:530px;
+	}
+	#kk{
+		margin-left:500px;
+	}
+	#lk{
+		margin-left:230px;
+	}
+	#gg{
+		margin-left:500px;
+		margin-right:500px;
+		padding:20px;
+	}
+</style>
+
+
+<body bgcolor="mejanda">
+
+<center><h1>Registration Form</h1></center>
+
+<form>
+
+    <label id="hdg">Name: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+    <input type="text" name="firstname" required><br><br>
+
+    <label id="hdg">Password: &nbsp&nbsp&nbsp&nbsp&nbsp </label>
+    <input type="password" name="password" required><br><br>
+
+    <label id="hdg">Mobile:&nbsp&nbsp&nbsp</label>
+    <span>+91</span>
+    <input type="number" name="mobile" maxlength="10" required><br><br>
+
+    <label id="hdg">Address: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+    <textarea name="address" placeholder="Enter your address" required></textarea><br><br>
+
+    <label id="hdg">DOB: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+    <input type="date" name="dob" required><br><br>
+
+    <label id="hdg">Email: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+    <input type="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+    <label id="hdg">Nationality: &nbsp&nbsp&nbsp&nbsp</label>
+    <select required>
+        <option value="india">India</option>
+        <option value="uae">UAE</option>
+        <option value="america">America</option>
+    </select><br><br>
+
+    <label id="hdg">Gender :&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+	<label>Male</label>
+	<input type="radio" name="gender" value="Male" required>
+	<label>Female</label>
+	<input type="radio" name="gender" value="Female" required>
+	<label>Other</label>
+	<input type="radio" name="gender" value="Other" required ><br><br>
+
+    <fieldset  id="gg">
+        <legend>Languages Known:</legend>
+        <input type="checkbox" name="languages" value="English"> English<br>
+        <input type="checkbox" name="languages" value="Malayalam"> Malayalam<br>
+        <input type="checkbox" name="languages" value="Hindi"> Hindi<br>
+        <input type="checkbox" name="languages" value="Arabic"> Arabic<br>
+    </fieldset><br>
+
+    <input id="kk" type="submit" value="Submit">
+    <input id="lk" type="reset" value="Cancel">
+
+</form>
+
+</body>
+</html>
