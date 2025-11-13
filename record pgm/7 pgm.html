@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form Validation</title>
+<script>
+function validate() {
+var passwd = document.getElementById("pwd").value;
+var pass = document.getElementById("conf").value;
+var Uname = document.getElementById("username").value;
+var mobile = document.getElementById("mobile").value;
+
+if (Uname == "") {
+	alert("Enter a your name");
+	return false;
+	}
+	else if (!isNaN(Uname)) {
+	alert("Name required alphabets!");
+	return false;
+	}
+	else if (mobile == "") {
+	alert("Enter mobile number");
+	return false;
+	}
+	else if (mobile.length != 10) {
+	alert("invalid number!..mobile requires 10 digits");
+	return false;
+	}
+	else if (passwd == "") {
+	alert("Enter your password");
+	return false;
+	}
+	else if (passwd.length < 8) {
+	alert("Password requires at least 8 characters");
+	return false;
+	}
+	else if (pass == "") {
+	alert("enter confirm password");
+	return false;
+	}
+	else if (pass != passwd) {
+	alert("password does not match");
+	return false;
+	}
+	else {
+	alert("Thank You for Registration");return true;
+	}
+}
+</script>
+</head>
+
+
+<body bgcolor="skyblue">
+<div class="modal">
+<center>
+<h2>Registration Form</h2>
+<form style="width:900px; position:relative; left:20px;" onsubmit="return validate()">
+
+<label>Name: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+<input type="text" id="username"><br><br>
+
+<label>Mobile:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+    <span>+91</span>
+    <input type="number" id="mobile"><br><br>
+
+<label>Password: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </label>
+    <input type="password" id="pwd"><br><br>
+	
+<label>Confirm Password: &nbsp </label>
+    <input type="password" id="conf"><br><br>
+	
+<button type="submit">Submit</button>
+</form></center>
+</div>
+</body>
+</html>
