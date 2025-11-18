@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Changing image and text</title>
+<style>
+img{
+max-width:100%;
+border:5px solid skyblue;
+border-radius:30%;
+width:600px;
+padding:5px;
+height:auto;
+}
+#p1{
+
+font-size:30px;
+}
+</style>
+<script>
+function one()
+{
+document.getElementById("img").src="h13.jpg";
+document.getElementById("h1").innerHTML= "Bugatti";
+document.getElementById("p1").innerHTML= "onmouseover";
+document.getElementById("p1").style.color= "violet";
+}
+function two()
+{
+document.getElementById("img").src="h11.jpg";
+document.getElementById("h1").innerHTML= "BMW";
+document.getElementById("p1").innerHTML= "onmouseout";
+document.getElementById("p1").style.color= "red";
+}
+</script>
+</head>
+<body><center>
+<h1 id="h1">Rolls Royce<h1>
+<img src="h12.jpg" id = "img" onmouseover="one()" onmouseout="two()" >
+<b><p id = "p1"></p></b></center>
+</body>
+</html>
